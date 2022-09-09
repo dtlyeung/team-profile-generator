@@ -19,7 +19,7 @@
     "inquirer": "8.2.4"
   },
   "devDependencies": {
-    "jest": ""
+    "jest": "^29.0.2"
   },
   "bugs": {
     "url": "https://github.com/dtlyeung/team-profile-generator/issues"

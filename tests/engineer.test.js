@@ -3,8 +3,8 @@ const Engineer = require('../lib/engineer');
 
 // Create engineer object
 test('create engineer object', () => {
-    const engineer = new Engineer('Daniel', 1234, 'danieltlyeung@gmail.com');
-    expect(engineer.github).toEqual(expect.any(String));
+    const engineer = new Engineer('Daniel', 1234, 'danieltlyeung@gmail.com', 'dtlyeung');
+    expect(engineer.github) .toEqual(expect.any(String));
 });
 
 // Get github
