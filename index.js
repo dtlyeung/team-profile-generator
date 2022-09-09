@@ -1,10 +1,10 @@
 // HTML page creation
-const generateHTML = require('./src/generateHTML');
+const generateHTML = require('./src/HTMLgenerator');
 
 // Team profiles
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern'); 
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern'); 
 
 // Modules
 const fs = require('fs'); 
@@ -200,3 +200,29 @@ const addEmployee = () => {
     })
 
 };
+
+// Generate HTML with fs
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        // If error
+        if (err) {
+            console.log(err);
+            return;
+        // When profiles created
+        } else {
+            console.log("Your team's profiles have been created. It can be found in the /dist folder.")
+        }
+    })
+};
+
+addManager()
+    .then(addEmployee)
+    .then(teamArray => {
+        return generateHTML(teamArray);
+    })
+    .then(HTMLPage => {
+        return writeFile(HTMLPage);
+    })
+    .catch(err => {
+        console.log(err);
+    });
