@@ -13,4 +13,10 @@ Helps to provide key information such as the manager's office number, engineer's
 Use "node index.js" at the command line and follow prompts
 
 ## Demo
+Use link below to see a demo
+
+https://youtu.be/Aa1XVOE4ZOY 
+
+## Known issues
+The generated HTML doesn't display properly.
 
