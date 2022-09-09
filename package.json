@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "create profiles of team members",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtlyeung/team-profile-generator.git"
+  },
+  "author": "Daniel Yeung",
+  "dependencies": {
+    "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": ""
+  },
+  "bugs": {
+    "url": "https://github.com/dtlyeung/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/dtlyeung/team-profile-generator#readme",
+  "keywords": [],
+  "license": "ISC"
+}
